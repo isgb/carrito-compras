@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Productos from './components/Productos';
 import Layout from './components/Layout';
+import Title from './components/Title';
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
   render() {
     return (
       <Layout>
+        <Title/>
         <Productos
           agregarACarro={() => console.log("NO HACE NADA")}
           productos={this.state.productos}
